@@ -1,0 +1,85 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\seraf\.node\corepack\yarn\1.22.15\bin\yarn.js init
+
+PATH: 
+  C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Users\seraf\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\seraf\AppData\Local\Programs\Python\Python310\;C:\Users\seraf\AppData\Local\Microsoft\WindowsApps;C:\Users\seraf\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\seraf\AppData\Roaming\npm;C:\Users\seraf\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.13.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Users\seraf\.node\corepack\yarn\1.22.15\lib\cli.js:137145:13)
+      at Interface.emit (node:events:390:28)
+      at Interface._ttyWrite (node:readline:1081:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:390:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:390:28)
+      at addChunk (node:internal/streams/readable:315:12)
+
+npm manifest: 
+  {
+    "name": "webpack-boilerplate",
+    "version": "3.0.1",
+    "description": "Sensible webpack 5 boilerplate using Babel and PostCSS.",
+    "main": "index.js",
+    "author": "Tania Rascia",
+    "license": "MIT",
+    "scripts": {
+      "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+      "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+      "lint": "eslint 'src/**/*.js' || true",
+      "prettify": "prettier --write 'src/**/*.js'"
+    },
+    "keywords": [
+      "webpack",
+      "webpack 5",
+      "webpack boilerplate"
+    ],
+    "devDependencies": {
+      "@babel/core": "^7.15.8",
+      "@babel/plugin-proposal-class-properties": "^7.14.5",
+      "@babel/preset-env": "^7.15.8",
+      "babel-loader": "^8.2.2",
+      "clean-webpack-plugin": "^4.0.0",
+      "copy-webpack-plugin": "^9.0.1",
+      "cross-env": "^7.0.3",
+      "css-loader": "^6.4.0",
+      "css-minimizer-webpack-plugin": "^3.1.1",
+      "eslint": "^7.28.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-import-resolver-webpack": "^0.13.1",
+      "eslint-plugin-prettier": "^4.0.0",
+      "html-webpack-plugin": "^5.3.2",
+      "mini-css-extract-plugin": "^2.4.2",
+      "sass": "^1.43.5",
+      "postcss-loader": "^6.2.0",
+      "postcss-preset-env": "^6.7.0",
+      "prettier": "^2.4.1",
+      "sass-loader": "^12.2.0",
+      "style-loader": "^3.3.0",
+      "webpack": "^5.58.2",
+      "webpack-cli": "^4.9.0",
+      "webpack-dev-server": "^4.3.1",
+      "webpack-merge": "^5.8.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:taniarascia/webpack-boilerplate"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
